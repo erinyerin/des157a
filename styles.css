@@ -44,26 +44,28 @@ ul{
    list-style-type: none;
 }
 
+body{
+    margin: 30px;
+}
 
 h1{
     font-family: "Jacquard 12", system-ui;
     font-weight: 400;
     font-style: normal;
     font-size: 60px;
-    padding-top: 100px;
-    padding-left: 100px;
 }
 
 header h2{
     font-family: "IBM Plex Sans", sans-serif;
     font-size: 24px;
-    padding-left: 100px;
 }
 
 main div{
     border: 1px solid black;
     border-radius: 10px;
     background-color: #FBF4EC;
+    margin: 1em;
+    padding: 1em;
 }
 
 main div:hover{
@@ -90,10 +92,6 @@ li{
     margin: 1em 0;
 }
 
-footer{
-    margin: 0 100px;
-}
-
 footer p{
     margin: 1em 0;
 }
@@ -117,6 +115,11 @@ footer p{
 }
 
 @media screen and (min-width: 600px) {
+    
+    body{
+        margin: 0;
+    }
+
     #container{
         max-width: 1200px;
         margin: auto;
@@ -129,8 +132,21 @@ footer p{
     }
 
     main div{
-        padding: 1em;
+        margin: 0;
         flex: 1 1 0;
+    }
+
+    h1{
+        padding-top: 100px;
+        padding-left: 100px;
+    }
+
+    header h2{
+        padding-left: 100px;
+    }
+    
+    footer{
+        margin: 0 100px;
     }
     
 }
