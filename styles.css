@@ -1,3 +1,46 @@
+/* Google Fonts
+
+.jacquard-12-regular {
+  font-family: "Jacquard 12", system-ui;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+
+/* .ibm-plex-sans-<uniquifier> {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+
+/* helpful resets */
+h1, h2, h3, h4, h5, h6, p, a, nav ul {
+    margin: 0;
+    padding: 0;
+  }
+       
 body{
-    background-color: aliceblue;
+    background-color: #FBF4EC;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    box-sizing: border-box;    
+  }
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+/* end resets */
+
+
+
+ul{
+   list-style-type: none;
 }
