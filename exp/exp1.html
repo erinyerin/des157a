@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Experiment 1</title>
+</head>
+<body>
+
+    <h1>Annoying Little Sister Simulator</h1>
+    <h2>Hey there! Have you ever had a younger sibling parrot you in a mocking voice to drive you crazy? NO? If you want to find out what that's like, right click on your screen and select 'Inspect' from the drop down menu. Then, go to the 'console' tab in the window that opens up. Voila! Meet your virtual little sister.</h2>
+
+    <!-- This script takes a user's input and capitalizes every other letter and every 5th letter to imitate a mocking tone. It also adds a :P emote at the end to mimic a tongue sticking out!-->
+    <script>
+        var userInput = prompt("Say something to your little sister:");
+
+        var output = "";
+
+        // loop: the for-loop loops for every character in the string userInput
+        // sequence: the loop iterates through the string userInput in order
+        // selector: the if and else statements select every other character and every fifth character to capitalize it
+
+        for (i=0; i<userInput.length; i++) {
+            if (i%2==0) {
+                output = output + userInput[i].toUpperCase();
+            }
+            else if (i%5==0) {
+                output = output + userInput[i].toUpperCase();
+            }
+            else {
+                output = output + (userInput[i]);
+            }
+        }
+
+        output = output + " :P";
+
+        console.log(`${output}`);
+
+    </script>
+    
+</body>
+</html>
