@@ -39,3 +39,97 @@ img {
   }
 
 /* end resets */
+
+body{
+        margin: 0;
+    }
+
+#container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
+nav a{
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 50px;
+    border-width: 2px 5px 5px 2px;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#journalNav .card{
+    margin: 0;
+    padding: 25px;
+    flex: 1 1 0;
+    border: 1px solid black;
+    border-radius: 10px;
+    border-width: 2px 5px 5px 2px;
+}
+
+.card a{
+    font-family: "Jacquard 12", serif;
+    font-size: 24px;
+}
+
+.card p{
+    margin-bottom: 1em;
+}
+
+h1{
+    font-family: "Jacquard 12", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 60px;
+}
+
+header{
+    padding-bottom: 50px;
+}
+
+header .articleInfo h3{
+    border: 1px solid black;
+    padding: 0.5em;
+    font-family: "IBM Plex Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+header .articleInfo{
+    margin-top: 30px;
+}
+
+article p{
+    font-family: "IBM Plex Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+    font-size: 18px;
+    max-width: 50em;
+    margin: auto;
+    padding-bottom: 2em;
+    line-height: 1.5em;
+}
+
+footer{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+footer p{
+    margin-bottom: 1em;
+}
