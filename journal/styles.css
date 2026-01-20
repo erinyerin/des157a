@@ -133,3 +133,30 @@ footer{
 footer p{
     margin-bottom: 1em;
 }
+
+#madlibs_design img{
+    margin: auto;
+    max-width: 800px;
+}
+
+#madlibs_design{
+    max-width: 1200px;
+    margin: auto;
+    h1{
+        margin: 0.5em 0;
+    }
+    h2, p{
+        margin: 1.5em 0;
+    }
+    header{
+        padding: 0;
+    }
+    div{
+        display: flex;
+        gap: 10px;
+        img{
+            height: 500px;
+            width: auto;
+        }
+    }
+}
