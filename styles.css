@@ -29,7 +29,7 @@ body{
     font-family: "IBM Plex Sans", sans-serif;
     font-weight: 400;
     font-style: normal; 
-    box-sizing: border-box;    
+    box-sizing: border-box;   
   }
 
 img {
@@ -46,6 +46,7 @@ ul{
 
 body{
     margin: 30px;
+    cursor: url(images/cursor.png), auto; 
 }
 
 h1{
@@ -66,6 +67,7 @@ main div{
     background-color: #FBF4EC;
     margin: 1em;
     padding: 1em;
+    cursor: auto;
 }
 
 main div:hover{
@@ -102,7 +104,7 @@ footer p{
   max-height: 750px;
   object-fit: contain;
   z-index: -1;
-  animation: fadeIn 3s ease-in;
+  animation: fadeIn 1s ease-in;
 }
 
 @keyframes fadeIn {
