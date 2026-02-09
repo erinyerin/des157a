@@ -98,10 +98,11 @@ h1{
 
 header{
     padding-bottom: 50px;
+    max-width: 60em;
+    margin: auto;
 }
 
 header .articleInfo h3{
-    border: 1px solid black;
     padding: 0.5em;
     font-family: "IBM Plex Sans", sans-serif;
     font-optical-sizing: auto;
@@ -111,6 +112,10 @@ header .articleInfo h3{
 
 header .articleInfo{
     margin-top: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    border-width: 2px 5px 5px 2px;
+    padding: 1em;
 }
 
 article p{
@@ -123,6 +128,10 @@ article p{
     margin: auto;
     padding-bottom: 2em;
     line-height: 1.5em;
+}
+
+article a{
+    font-weight: 600;
 }
 
 footer{
