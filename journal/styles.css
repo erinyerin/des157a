@@ -102,6 +102,10 @@ header{
     margin: auto;
 }
 
+#indexHeader{
+    max-width: 100%;
+}
+
 header .articleInfo h3{
     padding: 0.5em;
     font-family: "IBM Plex Sans", sans-serif;
