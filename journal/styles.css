@@ -36,6 +36,7 @@ img {
     display: block;
     max-width: 100%;
     height: auto;
+    margin-bottom: 10px;
   }
 
 /* end resets */
@@ -122,14 +123,17 @@ header .articleInfo{
     padding: 1em;
 }
 
+article{
+    max-width: 50em;
+    margin: auto;
+}
+
 article p{
     font-family: "IBM Plex Sans", sans-serif;
     font-optical-sizing: auto;
     font-weight: 350;
     font-style: normal;
     font-size: 18px;
-    max-width: 50em;
-    margin: auto;
     padding-bottom: 2em;
     line-height: 1.5em;
 }
@@ -166,10 +170,25 @@ footer p{
     }
     div{
         display: flex;
+        object-fit: contain;
         gap: 10px;
         img{
             height: 500px;
             width: auto;
         }
     }
+}
+
+h2{
+    margin-bottom: 1em;
+}
+
+#entry4image{
+    display: grid;
+    grid-template-columns: 1.77fr 1fr;
+    gap: 10px;
+}
+
+figcaption{
+    margin-bottom: 10px;
 }
