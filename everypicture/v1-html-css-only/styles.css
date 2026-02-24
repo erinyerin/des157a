@@ -1,0 +1,217 @@
+/* .nanum-pen-script-regular {
+  font-family: "Nanum Pen Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+} */
+
+h1, h2, h3, p, a, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Nanum Pen Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+}
+
+.header{
+    height: 100svh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    position: sticky;
+    top: 0;
+    font-size: 48px;
+    padding-top: 0.5em;
+}
+
+.postcard{
+    height: 90svh;
+}
+
+.text{
+    height: 350px;
+    width: 500px;
+    background-image: url(images/postcard.png);
+    background-size: cover;
+    box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.text p{
+    padding-left: 3em;
+    padding-right: 3em;
+    font-size: 16px;
+}
+
+#gangneung{
+    width: 1200px;
+    margin: auto;
+}
+
+#gangneung .postcard{
+    position: relative;
+}
+
+#gangneung img{
+    position: absolute;
+    transform: rotate(8deg);
+    top: 20px;
+    left: 150px;
+
+}
+
+#gangneung .text{
+    position: absolute;
+    transform: rotate(-12deg);
+    top: 200px;
+    right: 150px;
+}
+
+#losangeles{
+    width: 1200px;
+    margin: auto;
+}
+
+/* #losangeles h1{
+    color: white;
+} */
+
+#losangeles .postcard{
+    position: relative;
+}
+
+#losangeles img{
+    position: absolute;
+    transform: rotate(-10deg);
+    top: 75px;
+    left: 150px;
+
+}
+
+#losangeles .text{
+    position: absolute;
+    transform: rotate(6deg);
+    top: 200px;
+    right: 125px;
+}
+
+#sacramento{
+    width: 1200px;
+    margin: auto;
+}
+
+/* #sacramento h1{
+    color: white;
+} */
+
+#sacramento .postcard{
+    position: relative;
+}
+
+#sacramento img{
+    position: absolute;
+    transform: rotate(-10deg);
+    top: 75px;
+    left: 100px;
+
+}
+
+#sacramento .text{
+    position: absolute;
+    transform: rotate(12deg);
+    top: 200px;
+    right: 150px;
+}
+
+#berlin{
+    width: 1200px;
+    margin: auto;
+}
+
+#berlin .postcard{
+    position: relative;
+}
+
+#berlin img{
+    position: absolute;
+    transform: rotate(8deg);
+    top: 100px;
+    right: 150px;
+
+}
+
+#berlin .text{
+    position: absolute;
+    transform: rotate(-12deg);
+    top: 150px;
+    left: 100px;
+    box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+#vienna{
+    width: 1200px;
+    margin: auto;
+}
+
+#vienna .postcard{
+    position: relative;
+}
+
+#vienna img{
+    position: absolute;
+    transform: rotate(6deg);
+    top: 75px;
+    left: 150px;
+
+}
+
+#vienna .text{
+    position: absolute;
+    transform: rotate(-6deg);
+    top: 200px;
+    right: 125px;
+}
+
+#seattle{
+    width: 1200px;
+    margin: auto;
+}
+
+/* #seattle h1{
+    color: white;
+} */
+
+#seattle .postcard{
+    position: relative;
+}
+
+#seattle img{
+    position: absolute;
+    transform: rotate(6deg);
+    top: 50px;
+    right: 150px;
+
+}
+
+#seattle .text{
+    position: absolute;
+    transform: rotate(-6deg);
+    top: 150px;
+    left: 100px;
+    box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
