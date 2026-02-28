@@ -235,9 +235,9 @@ footer p{
 }
 
 /* Animating the color change */
-.image1 { background-image: url(images/gangneung.JPG); transition: all 1s; background-size:cover; background-repeat: none; background-position: center;} 
-.image2 { background-image: url(images/losangeles.jpg); transition: all 1s; background-size: cover; background-repeat: none; background-position: center;} 
-.image3 { background-image: url(images/sacramento.JPG); transition: all 1s; background-size: cover; background-repeat: none; background-position: center;}
-.image4 { background-image: url(images/berlin.jpg); transition: all 1s; background-size: cover; background-repeat: none; background-position: center;}
-.image5 { background-image: url(images/vienna.jpg); transition: all 1s; background-size: cover; background-repeat: none; background-position: center;}
-.image6 { background-image: url(images/seattle.JPG); transition: all 1s; background-size: cover; background-repeat: none; background-position: center;}
+.image1 { background-image: url(images/gangneung.JPG); transition: all 1s; background-size:cover; background-repeat: no-repeat; background-position: center;} 
+.image2 { background-image: url(images/losangeles.jpg); transition: all 1s; background-size: cover; background-repeat: no-repeat; background-position: center;} 
+.image3 { background-image: url(images/sacramento.JPG); transition: all 1s; background-size: cover; background-repeat: no-repeat; background-position: center;}
+.image4 { background-image: url(images/berlin.jpg); transition: all 1s; background-size: cover; background-repeat: no-repeat; background-position: center;}
+.image5 { background-image: url(images/vienna.jpg); transition: all 1s; background-size: cover; background-repeat: no-repeat; background-position: center;}
+.image6 { background-image: url(images/seattle.JPG); transition: all 1s; background-size: cover; background-repeat: no-repeat; background-position: center;}
