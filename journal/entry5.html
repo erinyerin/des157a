@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entry 1 - Form Best Practice</title>
+
+    <!-- Normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div id="container">
+    <header>
+        <nav>
+            <a href="../index.html">To Portal</a>
+            <a href="index.html">To Learning Journal</a>
+        </nav>
+
+        <h1>Game Design Research</h1>
+        <div class="articleInfo">
+            <h3><b>Date:</b> March 3, 2026</h3>
+            <h3><b>Article Link:</b> <a href="https://www.theguardian.com/lifeandstyle/2022/dec/22/i-was-asked-to-invent-the-next-wordle-how-hard-could-it-be?ref=sidebar ">"I was asked to invent the next Wordle. How hard could it be?" by David Shariatmadari</a></h3>
+        </div>
+
+    </header>
+    <article>
+        <p>
+            As a cognitive science student, it’s always super interesting to me to read about how innate human impulses can explain why we engage in behaviors that go back as far as human history, like playing games. I really enjoyed hearing David Shariatmadari’s perspective on what it is about Wordle that makes it so engaging, especially considering his background in linguistics.
+        </p>
+
+        <p>
+            As I was ideating on how I could modify the game of PIG to be more interesting, the biggest thing I wanted to change was that there was such a low chance of rolling snake eyes that I couldn’t imagine why a user would pass instead of continuing to roll until they either won or rolled a 1 to end their turn. Shariatmadari explains that the key to making a game ‘entrancing’ is balancing luck and skill, making sure the user has a sense of control while still throwing in some unexpected variables. The issue with the current game of PIG is that the ‘luck’ aspect does not mess with the gameplay enough for it to not be boring.
+
+        </p>
+
+        <p>
+            Like how Shariatmadari explored many different variations of games and evaluated how each would address the luck, skill, and communal aspects that make Wordle so successful, I also explored multiple modifications that would make the game more unpredictable. I considered making the zero condition any sum of 7, which is much more common than snake eyes; and allowing the user to remove a face of the dice after each turn, changing the odds of rolling snake eyes each time; but I thought it would be more interesting to ramp up the tension as the user got closer to reaching the win condition. So, I plan on modifying the game so that instead of having just one zero condition being snake eyes, the odds of 0-ing out your score increase as your score gets higher. For example, a chance your score will 0 out on roll might be 5% while your score is 2, but once you start reaching a score of over 25% there might be a 75% chance your score will zero out on the next roll. I’ll have to adjust the weights during user testing to make sure that the chance isn’t so high that it’s impossible for anyone to win, but I think each roll becoming riskier and riskier makes this a much ballsier game than before!
+
+        </p>
+    </body>
+
+    </article>
+
+     <footer>
+        <p>Designed + Coded with &#10084;&#xFE0F; by Erin Park</p>
+        <p>💌 <a href="&#101;&#114;&#105;&#112;&#097;&#114;&#107;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">&#101;&#114;&#105;&#112;&#097;&#114;&#107;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;</a></p>
+    </footer>
+    
+    </div>
+
+</html>
