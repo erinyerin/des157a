@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Don't Feed the Ducks.</title>
+
+    <!-- Normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Styles and Script -->
+	<link href="styles.css" rel="stylesheet">
+    <script src="script.js" defer></script>
+    
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Special+Elite&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div id ="container">
+        <header>
+            <h1>Don't Feed the Ducks.</h1>
+            
+            <div id="gamecontrol">
+                <button id="quit">Start a New Game</button>
+                <button id="howto">How to Play</button>
+            </div>
+        </header>
+
+        <div id="modal" class="slide-up">
+            <img src="images/modal.png" alt="Game Instructions">
+            <button id="startGame">Let's Play!</button>
+        </div>
+        
+
+        <div id="scoreboard">
+            <div id="duckscore">
+                    <p class="playerName">Duck</p>
+                    <div>
+                        <img src="images/bread.png" alt="bread icon">
+                        <p class="score" id="score1">00</p>      
+                    </div>
+            </div>
+
+            <div id="pigeonscore">
+                <p class="playerName">Pigeon</p>
+                <div>
+                    <img src="images/bread.png" alt="bread icon">
+                    <p class="score" id="score2">00</p>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="players">
+                <img id="duckImage" src="images/duck1neutral.png" alt="Duck">
+                <img id="pigeonImage" src="images/pigeon1neutral.png" alt="Pigeon">
+        </div>
+
+
+        <div id="game">
+
+            <p id="gameText"></p>
+            <div id="diceArea"></div>
+
+        </div>
+
+        <div id="actions"></div>
+
+    </div>
+    
+</body>
+</html>
