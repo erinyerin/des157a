@@ -6,10 +6,17 @@
 
 
 /******* some resets ********/
-img{
-    max-width: 100%;
-    display: block;
+
+h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
 }
+   
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+   }
 
 /******* end resets resets ********/
 
@@ -25,6 +32,7 @@ header{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 button{
@@ -32,7 +40,7 @@ button{
     background-color: #FFF3BF;
     border-radius: 7px;
     border-style: none;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
     font-size: 16px;
 }
 
@@ -126,7 +134,7 @@ h1{
     background-color: white;
     border: solid 6px #FFF3BF;
     border-radius: 7px;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
     font-size: 24px;
     padding: 0.25em 1em;
     margin: 0;
@@ -167,8 +175,16 @@ h1{
 }
 
 #game img{
-    max-width: 100px;
+    max-width: 60px;
     height: auto;
+}
+#gameText{
+    margin-bottom: 1em;
+}
+
+#game h2{
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 /******* actions ********/
@@ -186,8 +202,8 @@ h1{
     background-color: #FFF3BF;
     border-radius: 7px;
     border-style: none;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    font-size: 16px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
+    font-size: 24px;
 }
 
 /******* actions end ********/
