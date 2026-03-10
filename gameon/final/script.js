@@ -14,6 +14,8 @@
     const howTo = document.querySelector('#howto')
     const diceArea = document.querySelector('#diceArea')
     const gameText = document.querySelector('#gameText')
+    const quit = document.querySelector('#quit')
+    const modal = document.querySelector('#modal')
 
     const gameData = {
         dice: ['1die.png', '2die.png', '3die.png', '4die.png', '5die.png', '6die.png'],
@@ -40,17 +42,16 @@
         modal.classList.remove('slide-down');
     })
 
+    quit.addEventListener('click', function(){
+        location.reload();
+    })
+
 
     startGame.addEventListener('click', function(){
         //randomly set gameData.index here
         gameData.index = Math.round(Math.random());
         console.log(gameData.index);
-
-        document.querySelector('#quit').addEventListener('click', function(){
-            location.reload();
-        });
         setUpTurn();
-
         modal.classList.add('slide-down');
         modal.classList.remove('slide-up');
     });
@@ -76,8 +77,8 @@
         }
 
         else if (gameData.fatLevel[gameData.index]>=2 && gameData.fatLevel[gameData.index]<4){
-            gameData.zeroCondition[gameData.index] = Math.floor(Math.random() * 3);
-            //generate random number btwn 0 and 2, so 33% chance of generating 0
+            gameData.zeroCondition[gameData.index] = Math.floor(Math.random() * 4);
+            //generate random number btwn 0 and 3, so 25% chance of generating 0
         }
 
         else if (gameData.fatLevel[gameData.index]>=4){
@@ -159,7 +160,10 @@
             else if (gameData.score[gameData.index] > gameData.gameEnd){
                 game.innerHTML = `<h2>${gameData.players[gameData.index]} ate ${gameData.score[gameData.index]} breadcrumbs and wins!</h2>`
                 gameData.imageSelector[gameData.index].src = `images/${gameData.neutral[gameData.fatLevel[gameData.index]]}`
-                actionArea.innerHTML='<button id="quit">Play Again</button>';
+                actionArea.innerHTML='<button id="playAgain">Play Again</button>';
+                document.querySelector('#playAgain').addEventListener('click', function(){
+                    location.reload()
+                })
             }
 
             else{
