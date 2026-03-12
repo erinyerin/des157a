@@ -20,6 +20,16 @@ img {
 
 /******* end resets resets ********/
 
+body{
+    background-image: url(images/paper.png)
+}
+
+#backgroundImage{
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 #container{
     width: 1200px;
     margin: auto;
@@ -31,22 +41,34 @@ img {
 header{
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    padding-top: 40px;
     margin-bottom: 20px;
+}
+
+#title{
+    width: 400px;
+    height: 110px;
+    background-image: url(images/header.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 28px;
 }
 
 button{
     padding: 0.75em;
-    background-color: #FFF3BF;
+    background-color: #E9E9E9;
+    border: 1px solid black;
+    border-width: 2px 4px 4px 2px;
+    box-shadow: none;
     border-radius: 7px;
-    border-style: none;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
     font-size: 16px;
-}
-
-h1{
-    /* color: white; */
-
 }
 
 
@@ -80,7 +102,7 @@ h1{
 
 @keyframes slideUp {
     from { transform: translateX(-50%) translateY(100%); }
-    to { transform: translateX(-50%) translateY(0); }
+    to { transform: translateX(-50%) translateY(-75px); }
 }
 
 @keyframes slideDown {
@@ -180,6 +202,7 @@ h1{
 }
 #gameText{
     margin-bottom: 1em;
+    font-size: 24px;
 }
 
 #game h2{
@@ -194,16 +217,35 @@ h1{
     gap: 20px;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 #actions button{
-    padding: 0.75em;
-    background-color: #FFF3BF;
-    border-radius: 7px;
-    border-style: none;
-    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.25);
     font-size: 24px;
+    padding: 0.5em;
 }
 
 /******* actions end ********/
+
+/******* footer ********/
+footer{
+    width: 1200px;
+    margin: auto;
+    padding: 40px 0px;
+
+}
+
+footer p{
+    margin-bottom: 1em;
+    font-family: "Special Elite", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul{
+    font-family: "Special Elite", serif;
+    font-size: 10px;
+}
+ul li{
+    padding-bottom: 1em;
+}

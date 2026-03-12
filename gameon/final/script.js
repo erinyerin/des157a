@@ -17,6 +17,11 @@
     const quit = document.querySelector('#quit')
     const modal = document.querySelector('#modal')
 
+    //sounds
+    const quack = new Audio('sound/185546__crazyduckman__quack.wav')
+    const tweet = new Audio('sound/9325__tigersound__bird-tweet-2.mp3')
+    const boom = new Audio('sound/435695__samsterbirdies__big-boom.ogg')
+
     const gameData = {
         dice: ['1die.png', '2die.png', '3die.png', '4die.png', '5die.png', '6die.png'],
         players: ['Duck', 'Pigeon'],
@@ -56,6 +61,15 @@
         modal.classList.remove('slide-up');
     });
 
+    duckImage.addEventListener('mouseover', function(){
+        quack.play()
+    })
+
+    pigeonImage.addEventListener('mouseover', function(){
+        tweet.play()
+    })
+
+
 
     function setUpTurn(){
         gameText.innerHTML = `Roll the dice to feed ${gameData.players[gameData.index]}!`;
@@ -78,7 +92,7 @@
 
         else if (gameData.fatLevel[gameData.index]>=2 && gameData.fatLevel[gameData.index]<4){
             gameData.zeroCondition[gameData.index] = Math.floor(Math.random() * 4);
-            //generate random number btwn 0 and 3, so 25% chance of generating 0
+            //generate random number btwn 0 and 2, so 33% chance of generating 0
         }
 
         else if (gameData.fatLevel[gameData.index]>=4){
@@ -140,6 +154,7 @@
             if(gameData.zeroCondition[gameData.index]===0){
                 gameData.score[gameData.index] = 0;
                 gameData.imageSelector[gameData.index].src = `images/${gameData.open[6]}`
+                boom.play()
                 gameText.innerHTML = `<p>Oh no! Your bird overate!</p>`;
                 showCurrentScore();
                 gameData.fatLevel[gameData.index] = gameData.index;
@@ -148,7 +163,7 @@
                     gameData.imageSelector[gameData.index].src = `images/${gameData.neutral[gameData.fatLevel[gameData.index]]}`
                     gameData.index ? (gameData.index=0) : (gameData.index=1);
                     setUpTurn();
-                }, 3000);
+                }, 2000);
             }
             //zero condition will have x% chance of picking 0
             //if gameData.zeroCondition[gameData.index] = 0
